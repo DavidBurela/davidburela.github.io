@@ -1,7 +1,8 @@
 ---
-Title: Burela Github test
-Tagline: Checking out how this stuff works
+title: Burela Github test
+tagline: Checking out how this stuff works
 ---
+
 <!DOCTYPE html>
 <html>
 
@@ -22,8 +23,8 @@ Tagline: Checking out how this stuff works
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/DavidBurela">View on GitHub</a>
 
-          <h1 id="project_title">{{ page.title }}</h1>
-          <h2 id="project_tagline">{{ page.tagline }}</h2>
+          <h1 id="project_title">{{page.title}}</h1>
+          <h2 id="project_tagline">{{page.tagline}}</h2>
 
         </header>
     </div>
@@ -34,10 +35,8 @@ Tagline: Checking out how this stuff works
 
 {% for post in site.posts %}
   {{ post.content}}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
+{% endfor %}
+  
   
       </section>
     </div>
